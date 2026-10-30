@@ -13,7 +13,7 @@
 
   // ---------- 滚动进场（同组元素错开出现）----------
   var targets = document.querySelectorAll(
-    ".intro-text, .intro-photo, .about-grid > *, .skill, .cta-inner, .contact, .proj, .next-band"
+    ".intro-text, .intro-photo, .about-grid > *, .skill-panel, .cta-inner, .contact, .proj, .next-band"
   );
   targets.forEach(function (el) { el.classList.add("reveal"); });
 
