@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>我的项目 · 李雨桐</title>
+<meta name="description" content="李雨桐的项目：软爪选粮猫粮评分平台、客户分析报告。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="bg-deco" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">李雨桐</a>
+    <nav class="nav-links">
+      <a class="nav-cta" href="index.html">← 返回首页</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <a class="back-link" href="index.html">← 返回首页</a>
+    <span class="eyebrow">Projects</span>
+    <h1 class="page-title">我的项目</h1>
+    <p class="sec-sub">两个已经上线、可以直接点开用的作品</p>
+  </div>
+</section>
+
+<section class="sec sec-top">
+  <div class="wrap">
+    <div class="proj-grid">
+
+      <article class="card proj">
+        <div class="proj-cover">
+          <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=800&q=80"
+               alt="软爪选粮猫粮评分平台" loading="lazy">
+          <span class="proj-flag">已上线</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker">产品 · 评分推荐</div>
+          <h2>软爪选粮 · 猫粮评分平台</h2>
+          <p class="proj-lead">
+            把 60 款猫粮的成分表拆成可计算字段，用五维加权模型算出综合分，
+            并给出每一条加减分理由——不是给个数字，而是告诉你为什么。
+          </p>
+          <ul class="ticks">
+            <li>四张分表建模 + LEFT JOIN 组装宽表，上层页面零改动</li>
+            <li>ECharts 交互图表：价位分布、蛋白 × 单价相关性、品牌排行、占比环形图</li>
+            <li>用户系统、收藏、评价审核、降价提醒、评分权重在线调整</li>
+            <li>后台管理系统：产品增删改查、CSV 导入、评价审核</li>
+          </ul>
+          <div class="chips">
+            <span>Python</span><span>Flask</span><span>pandas</span>
+            <span>SQLite</span><span>ECharts</span><span>Bootstrap 5</span>
+          </div>
+          <div class="proj-links">
+            <a class="btn btn-solid btn-sm" href="https://grape7777777.pythonanywhere.com/" target="_blank" rel="noopener">访问网站 <span class="arw">↗</span></a>
+            <a class="btn btn-line btn-sm" href="https://github.com/liyu-tong/catfood" target="_blank" rel="noopener">查看源码</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card proj">
+        <div class="proj-cover proj-cover-chart">
+          <div class="mini-chart">
+            <span style="--h:38%"></span><span style="--h:62%"></span><span style="--h:47%"></span>
+            <span style="--h:80%"></span><span style="--h:56%"></span><span style="--h:92%"></span>
+            <span style="--h:71%"></span>
+          </div>
+          <span class="proj-flag">已上线</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-kicker">业务 · 分析报告</div>
+          <h2>客户分析报告</h2>
+          <p class="proj-lead">
+            面向业务侧的客户数据分析：从客户结构、行为与价值分层出发，
+            讲清楚"客户是谁、值不值得投入、下一步该做什么"，结论直接给到可执行的动作。
+          </p>
+          <ul class="ticks">
+            <li>客户分层与价值分布分析</li>
+            <li>关键指标看板 + 图表化结论</li>
+            <li>GitHub Pages 静态部署，打开即看</li>
+          </ul>
+          <div class="chips">
+            <span>数据分析</span><span>可视化</span><span>报告撰写</span><span>GitHub Pages</span>
+          </div>
+          <div class="proj-links">
+            <a class="btn btn-solid btn-sm" href="https://liyu-tong.github.io/client-report/" target="_blank" rel="noopener">阅读报告 <span class="arw">↗</span></a>
+            <a class="btn btn-line btn-sm" href="https://github.com/liyu-tong/client-report" target="_blank" rel="noopener">查看源码</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="next-band">
+      <p>看完项目，想认识一下做这些的人？</p>
+      <a class="btn btn-line" href="index.html#about">看看关于我 <span class="arw">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>© <span id="year">2026</span> 李雨桐 · 成都大学工商管理</span>
+    <a href="index.html">返回首页</a>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

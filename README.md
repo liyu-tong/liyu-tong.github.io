@@ -7,8 +7,9 @@
 ## 结构
 
 ```
-index.html          页面结构（封面 / 关于我 / 项目 / 技能 / 联系）
-assets/style.css    样式（沿用软爪选粮的暖色体系）
+index.html          首页：开场个人介绍 → 关于我 → 能力 → 项目入口按钮 → 联系
+projects.html       项目页：两个项目的详细介绍（首页点「打开我的项目」进入）
+assets/style.css    样式（奶油米白 + 赤陶橘 + 鼠尾草绿，衬线标题）
 assets/main.js      滚动进场、导航高亮、平滑滚动
 ```
 
@@ -18,12 +19,13 @@ assets/main.js      滚动进场、导航高亮、平滑滚动
 
 | 位置 | 内容 |
 | --- | --- |
-| 封面 `<h1>` | 姓名 |
-| 封面 `.tagline` | 一句话定位 |
-| 封面 `.lead` | 个人介绍 |
-| 封面 `.hero-meta` | 地点 / 身份 / 标签 |
-| 关于我 `.about-text` | 详细自我介绍 |
-| 联系区 | 邮箱 |
+| `index.html` → `.name` | 姓名 |
+| `index.html` → `.eyebrow` | 学校 / 专业 / 年级 |
+| `index.html` → `.lead` | 一句话自我介绍 |
+| `index.html` → `.facts` | 城市 / 专业 / 方向 |
+| `index.html` → `.prose` | 详细自我介绍 |
+| `index.html` → 联系区 | 邮箱、电话 |
+| `projects.html` | 两个项目的介绍与链接 |
 
 ## 换封面照片
 

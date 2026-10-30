@@ -4,248 +4,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>李雨桐 · 个人主页</title>
-<meta name="description" content="李雨桐，成都大学工商管理专业大三学生。Python 数据分析学习者，作品：软爪选粮猫粮评分平台、客户分析报告。">
+<meta name="description" content="李雨桐，成都大学工商管理专业大三学生，用 Python 做数据分析：猫粮评分平台、客户分析报告。">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
+<div class="bg-deco" aria-hidden="true">
+  <span class="blob blob-a"></span>
+  <span class="blob blob-b"></span>
+  <span class="blob blob-c"></span>
+</div>
+
 <header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="#top">
-      <span class="brand-dot"></span>
-      <span>李雨桐</span>
-    </a>
+    <a class="brand" href="index.html">李雨桐</a>
     <nav class="nav-links">
-      <a href="#about">关于我</a>
-      <a href="#projects">项目</a>
+      <a href="#about">关于</a>
       <a href="#skills">技能</a>
       <a href="#contact">联系</a>
+      <a class="nav-cta" href="projects.html">我的项目 →</a>
     </nav>
   </div>
 </header>
 
-<!-- ============ 封面（HERO）============ -->
-<!-- 想换封面照片：把下面 <img> 的 src 换成你的照片即可（建议 900px 宽以上） -->
-<section class="hero" id="top">
-  <div class="wrap hero-inner">
-    <div class="hero-text">
-      <span class="chip">成都大学 · 工商管理 · 大三</span>
-      <h1>你好，我是 <span class="hl">李雨桐</span></h1>
-      <p class="tagline">用 Python 把杂乱的数据，变成能直接做决定的结论。</p>
+<!-- ===================== 开场：就是这个人的介绍 ===================== -->
+<section class="intro" id="top">
+  <div class="wrap intro-inner">
+
+    <div class="intro-text">
+      <span class="eyebrow">成都大学 · 工商管理 · 大三</span>
+
+      <h1 class="name">
+        李雨桐
+        <svg class="wave-line" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M2 9 C 40 1, 62 13, 108 6 S 168 1, 218 9" />
+        </svg>
+      </h1>
+      <p class="name-en">Li Yutong</p>
+
       <p class="lead">
-        工商管理专业出身，同时自己补上了数据分析这条线。习惯从一份原始数据做到一个能上线的产品：
-        自己清洗、自己建模、自己部署，交付能点开用的东西，而不是一张截图。
+        工商管理专业的同时，自己把数据分析这条路走了一遍：
+        从 pandas 清洗、统计口径设计，到用 Flask 和 ECharts 把结论做成一个
+        <strong>能点开、能筛选、能对比</strong> 的网站。
+        我更在意"别人真的会用"，而不是 notebook 里那张漂亮的图。
       </p>
-      <div class="hero-actions">
-        <a class="btn btn-solid" href="#projects">看看我的项目</a>
-        <a class="btn btn-ghost" href="#contact">联系我</a>
-      </div>
-      <div class="hero-meta">
-        <span><i>📍</i> 成都</span>
-        <span><i>🎓</i> 成都大学 · 工商管理 · 大三</span>
-        <span><i>🐱</i> 铲屎官</span>
+
+      <ul class="facts">
+        <li><span>城市</span><b>成都</b></li>
+        <li><span>专业</span><b>工商管理 大三</b></li>
+        <li><span>方向</span><b>Python 数据分析</b></li>
+      </ul>
+
+      <div class="actions">
+        <a class="btn btn-solid" href="projects.html">打开我的项目 <span class="arw">→</span></a>
+        <a class="btn btn-line" href="#contact">联系我</a>
       </div>
     </div>
 
-    <div class="hero-photo">
-      <div class="photo-frame">
-        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80"
-             alt="封面照片" loading="eager">
+    <figure class="intro-photo">
+      <div class="photo-stack">
+        <!-- 想换封面照片：改这里的 src 即可（建议 900px 宽以上、竖构图更好看） -->
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=900&q=80" alt="李雨桐的封面照片">
       </div>
-      <div class="photo-badge">
-        <strong>2</strong>
-        <span>个上线项目</span>
-      </div>
-    </div>
+      <figcaption>成都 · 2026</figcaption>
+    </figure>
+
   </div>
-  <div class="hero-wave"></div>
 </section>
 
-<!-- ============ 关于我 ============ -->
+<!-- ===================== 关于我 ===================== -->
 <section class="sec" id="about">
   <div class="wrap">
-    <h2 class="sec-title">关于我</h2>
-    <p class="sec-sub">一个从数据清洗做到产品上线的人</p>
+    <div class="sec-head">
+      <span class="sec-no">01</span>
+      <h2 class="sec-title">关于我</h2>
+      <p class="sec-sub">先想清楚问题，再去找数据和方法</p>
+    </div>
 
     <div class="about-grid">
-      <div class="card about-text">
+      <div class="prose">
         <p>
-          我是成都大学工商管理专业的大三学生。专业的训练让我习惯先把问题想清楚——
-          要解决什么、结论给谁看、对方看完能做什么——然后再去找数据和方法。这也是我做数据分析时的顺序。
+          工商管理专业的训练，让我习惯先把问题想清楚——<em>要解决什么、结论给谁看、对方看完能做什么</em>——
+          然后再去找数据和方法。这也是我做数据分析时的顺序。
         </p>
         <p>
           数据分析这条线是我自己一路补起来的：从 pandas 的清洗与聚合入手，再啃统计口径的设计，
           最后用 Flask + ECharts 把结论做成一个能点、能筛选、能对比的网站，而不是停在 notebook 里。
-          奖项暂时不是我的强项，所以我更愿意让能打开的东西替我说话。
+          奖项暂时不是我的强项，所以我更愿意让<em>能打开的东西</em>替我说话。
         </p>
         <p>
-          目前完成的两个项目，一个是面向消费者的评分推荐产品，一个是面向业务的客户分析结论，
-          分别代表我处理「产品数据」和「业务数据」的两种方式。
+          目前完成的两件事，一个是面向消费者的评分推荐产品，一个是面向业务的客户分析结论，
+          分别代表我处理"产品数据"和"业务数据"的两种方式。
           接下来想补齐评论文本的情感分析和价格时间序列预测，把评分模型做得更有解释性。
         </p>
       </div>
 
-      <div class="stat-col">
-        <div class="card stat">
-          <div class="stat-num">60<span>款</span></div>
-          <div class="stat-label">猫粮平台收录样本</div>
-        </div>
-        <div class="card stat">
-          <div class="stat-num">5<span>维</span></div>
-          <div class="stat-label">综合评分模型维度</div>
-        </div>
-        <div class="card stat">
-          <div class="stat-num">4<span>类</span></div>
-          <div class="stat-label">交互式数据图表</div>
-        </div>
-      </div>
+      <aside class="card side-card">
+        <h3>现在在做什么</h3>
+        <ul class="dot-list">
+          <li>维护猫粮评分平台的评分口径与图表</li>
+          <li>补客户分析报告的分层结论</li>
+          <li>学情感分析，接入口碑维度</li>
+        </ul>
+        <h3>我做事的方式</h3>
+        <ul class="dot-list">
+          <li>先定义指标，再选方法</li>
+          <li>结论要能落到具体动作</li>
+          <li>交付物默认做成一个能打开的页面</li>
+        </ul>
+      </aside>
     </div>
   </div>
 </section>
 
-<!-- ============ 项目 ============ -->
-<section class="sec sec-alt" id="projects">
+<!-- ===================== 技能 ===================== -->
+<section class="sec sec-tint" id="skills">
   <div class="wrap">
-    <h2 class="sec-title">项目</h2>
-    <p class="sec-sub">两个已经上线、可以直接点开用的作品</p>
-
-    <div class="proj-grid">
-
-      <article class="card proj">
-        <div class="proj-cover">
-          <!-- 项目封面：猫粮平台 -->
-          <img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=800&q=80"
-               alt="软爪选粮猫粮评分平台" loading="lazy">
-          <span class="proj-tag">已上线</span>
-        </div>
-        <div class="proj-body">
-          <h3>软爪选粮 · 猫粮评分平台</h3>
-          <p>
-            把 60 款猫粮的成分表拆成可计算字段，用五维加权模型（营养 / 安全 / 性价比 / 透明度 / 口碑）
-            算出综合分，并给出每一条加减分理由。含产品库、详情、排行榜、个性化推荐、对比、
-            数据洞察看板与后台管理。
-          </p>
-          <ul class="proj-points">
-            <li>四张分表建模 + LEFT JOIN 组装宽表，上层页面零改动</li>
-            <li>ECharts 交互图表：价位分布、蛋白 × 单价相关性、品牌排行、占比环形图</li>
-            <li>用户系统、收藏、评价审核、降价提醒、评分权重在线调整</li>
-          </ul>
-          <div class="chips">
-            <span>Python</span><span>Flask</span><span>pandas</span>
-            <span>SQLite</span><span>ECharts</span><span>Bootstrap 5</span>
-          </div>
-          <div class="proj-links">
-            <a class="btn btn-solid btn-sm" href="https://grape7777777.pythonanywhere.com/" target="_blank" rel="noopener">访问网站</a>
-            <a class="btn btn-ghost btn-sm" href="https://github.com/liyu-tong/catfood" target="_blank" rel="noopener">查看源码</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card proj">
-        <div class="proj-cover proj-cover-chart">
-          <!-- 项目封面：客户分析报告（纯 CSS 图表，可换成截图） -->
-          <div class="mini-chart">
-            <span style="--h:38%"></span>
-            <span style="--h:62%"></span>
-            <span style="--h:47%"></span>
-            <span style="--h:80%"></span>
-            <span style="--h:56%"></span>
-            <span style="--h:92%"></span>
-            <span style="--h:71%"></span>
-          </div>
-          <span class="proj-tag">已上线</span>
-        </div>
-        <div class="proj-body">
-          <h3>客户分析报告</h3>
-          <p>
-            面向业务侧的客户数据分析报告：从客户结构、行为与价值分层出发，
-            用可视化讲清楚「客户是谁、值不值得投入、下一步该做什么」，结论直接给到可执行的动作。
-          </p>
-          <ul class="proj-points">
-            <li>客户分层与价值分布分析</li>
-            <li>关键指标看板 + 图表化结论</li>
-            <li>GitHub Pages 静态部署，打开即看</li>
-          </ul>
-          <div class="chips">
-            <span>数据分析</span><span>可视化</span><span>报告撰写</span><span>GitHub Pages</span>
-          </div>
-          <div class="proj-links">
-            <a class="btn btn-solid btn-sm" href="https://liyu-tong.github.io/client-report/" target="_blank" rel="noopener">阅读报告</a>
-            <a class="btn btn-ghost btn-sm" href="https://github.com/liyu-tong/client-report" target="_blank" rel="noopener">查看源码</a>
-          </div>
-        </div>
-      </article>
-
+    <div class="sec-head">
+      <span class="sec-no">02</span>
+      <h2 class="sec-title">能力</h2>
+      <p class="sec-sub">从取数到上线的完整链路</p>
     </div>
-  </div>
-</section>
-
-<!-- ============ 技能 ============ -->
-<section class="sec" id="skills">
-  <div class="wrap">
-    <h2 class="sec-title">技能</h2>
-    <p class="sec-sub">从取数到上线的完整链路</p>
 
     <div class="skill-grid">
-      <div class="card skill">
-        <h4>语言与数据处理</h4>
-        <div class="chips">
-          <span>Python</span><span>SQL</span><span>pandas</span><span>numpy</span>
-        </div>
+      <article class="card skill">
+        <span class="skill-ico">🐍</span>
+        <h3>语言与数据处理</h3>
+        <div class="chips"><span>Python</span><span>SQL</span><span>pandas</span><span>numpy</span></div>
         <p>清洗、聚合、缺失值处理、多表关联与统计口径设计。</p>
-      </div>
-      <div class="card skill">
-        <h4>可视化</h4>
-        <div class="chips">
-          <span>ECharts</span><span>Matplotlib</span><span>图表设计</span>
-        </div>
+      </article>
+      <article class="card skill">
+        <span class="skill-ico">📈</span>
+        <h3>可视化</h3>
+        <div class="chips"><span>ECharts</span><span>Matplotlib</span><span>图表设计</span></div>
         <p>把统计结果做成能交互、能下钻、能讲故事的图表。</p>
-      </div>
-      <div class="card skill">
-        <h4>工程与部署</h4>
-        <div class="chips">
-          <span>Flask</span><span>SQLite</span><span>Git</span><span>GitHub Pages</span>
-        </div>
+      </article>
+      <article class="card skill">
+        <span class="skill-ico">🛠</span>
+        <h3>工程与部署</h3>
+        <div class="chips"><span>Flask</span><span>SQLite</span><span>Git</span><span>GitHub Pages</span></div>
         <p>Jinja2 服务端渲染、多表建模、Linux 托管与上线排错。</p>
-      </div>
-      <div class="card skill">
-        <h4>分析与表达</h4>
-        <div class="chips">
-          <span>指标设计</span><span>报告撰写</span><span>结论落地</span>
-        </div>
+      </article>
+      <article class="card skill">
+        <span class="skill-ico">🧭</span>
+        <h3>分析与表达</h3>
+        <div class="chips"><span>指标设计</span><span>报告撰写</span><span>结论落地</span></div>
         <p>先定义清楚问题，再选方法，最后把结论写成别人能执行的动作。</p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============ 联系 ============ -->
-<section class="sec sec-alt" id="contact">
+<!-- ===================== 项目入口 ===================== -->
+<section class="cta-band">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>想看看我做了什么？</h2>
+      <p>两个已经上线、可以直接点开用的项目：一个猫粮评分平台，一份客户分析报告。</p>
+    </div>
+    <a class="btn btn-solid btn-lg" href="projects.html">打开我的项目 <span class="arw">→</span></a>
+  </div>
+</section>
+
+<!-- ===================== 联系 ===================== -->
+<section class="sec" id="contact">
   <div class="wrap">
-    <h2 class="sec-title">联系我</h2>
-    <p class="sec-sub">想聊数据、聊项目，或者只是想交流猫粮选购，都欢迎</p>
+    <div class="sec-head">
+      <span class="sec-no">03</span>
+      <h2 class="sec-title">联系我</h2>
+      <p class="sec-sub">想聊数据、聊项目，或者交流猫粮选购，都欢迎</p>
+    </div>
 
     <div class="contact-grid">
       <a class="card contact" href="mailto:1679299301@qq.com">
-        <span class="c-icon">✉️</span>
-        <div>
-          <div class="c-label">邮箱</div>
-          <div class="c-value">1679299301@qq.com</div>
-        </div>
+        <span class="c-ico">✉️</span>
+        <div><div class="c-label">邮箱</div><div class="c-value">1679299301@qq.com</div></div>
       </a>
       <a class="card contact" href="tel:17882722387">
-        <span class="c-icon">📱</span>
-        <div>
-          <div class="c-label">电话</div>
-          <div class="c-value">178-8272-2387</div>
-        </div>
+        <span class="c-ico">📱</span>
+        <div><div class="c-label">电话</div><div class="c-value">178-8272-2387</div></div>
       </a>
       <a class="card contact" href="https://github.com/liyu-tong" target="_blank" rel="noopener">
-        <span class="c-icon">🐙</span>
-        <div>
-          <div class="c-label">GitHub</div>
-          <div class="c-value">github.com/liyu-tong</div>
-        </div>
+        <span class="c-ico">🐙</span>
+        <div><div class="c-label">GitHub</div><div class="c-value">github.com/liyu-tong</div></div>
       </a>
     </div>
   </div>
@@ -254,7 +195,7 @@
 <footer class="foot">
   <div class="wrap foot-inner">
     <span>© <span id="year">2026</span> 李雨桐 · 成都大学工商管理</span>
-    <span>用 HTML / CSS / 原生 JS 手写，托管在 GitHub Pages</span>
+    <span>手写 HTML / CSS / JS · 托管于 GitHub Pages</span>
   </div>
 </footer>
 
